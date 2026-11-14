@@ -12,7 +12,16 @@ jobs:
               run: test -f index.html
             - name: validate js file
               run: test -f script.js
+    first-job-2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get repo code
+              uses: actions/checkout@v4
 
+            #   run: echo "check second flow run"
+
+            - name: validate js file
+              run: test -f script.js
     second-job:
         runs-on: ubuntu-latest
         steps:
