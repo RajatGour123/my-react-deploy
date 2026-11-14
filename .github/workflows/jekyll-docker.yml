@@ -1,0 +1,11 @@
+name: Jekyll site CI
+on: workflow_dispatch
+jobs: 
+  first-job: 
+     runs-on: check_fithubaction
+     steps: 
+       - name: hello github action
+         run: echo "this is 1st step"
+       - name: bye github action
+         run : echo "bye bye github action"
+
