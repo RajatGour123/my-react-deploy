@@ -2,7 +2,7 @@ name: Jekyll site CI
 on: workflow_dispatch
 jobs: 
   first-job: 
-     runs-on: check_fithubaction
+     runs-on: ubuntu-latest
      steps: 
        - name: hello github action
          run: echo "this is 1st step"
