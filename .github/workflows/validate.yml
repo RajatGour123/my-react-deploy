@@ -23,6 +23,7 @@ jobs:
             - name: validate js file
               run: test -f script.js
     second-job:
+        needs: [first-job,first-job-2]
         runs-on: ubuntu-latest
         steps:
             - name: get repo code
