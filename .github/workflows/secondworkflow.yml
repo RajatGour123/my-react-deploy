@@ -1,0 +1,20 @@
+name: second wrokflow 
+on: push
+jobs:
+    first-job:
+        runs-on: ubantu-latest
+        steps:
+            - name: check second flow
+              run: echo "check second flow run"
+            - name: check second flow  2
+              run: echo "check second flow run 2"
+
+    second-job:
+        runs-on: ubantu-latest
+        steps:
+            - name: check second flow second-job
+              run: echo "check second flow run second-job"
+            - name: check second flow second-job 2
+              run: echo "check second flow run 2 second-job"
+
+
