@@ -2,7 +2,7 @@ name: second wrokflow
 on: push
 jobs:
     first-job:
-        runs-on: ubantu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: check second flow
               run: echo "check second flow run"
@@ -10,7 +10,7 @@ jobs:
               run: echo "check second flow run 2"
 
     second-job:
-        runs-on: ubantu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: check second flow second-job
               run: echo "check second flow run second-job"
