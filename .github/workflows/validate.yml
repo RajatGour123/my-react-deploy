@@ -1,0 +1,25 @@
+name: validate workflow 
+on: push
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get repo code
+              uses: actions/checkout@v4
+
+            #   run: echo "check second flow run"
+            - name: validate html file
+              run: test -f index.html
+            - name: validate js file
+              run: test -f index.js
+
+    second-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check js code
+              run: node --check index.js
+
+            # - name: check second flow second-job 2
+            #   run: echo "check second flow run 2 second-job"
+
+
