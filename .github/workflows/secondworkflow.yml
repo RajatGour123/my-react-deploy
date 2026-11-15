@@ -8,6 +8,8 @@ jobs:
               run: echo "check second flow run"
             - name: check second flow  2
               run: echo "check second flow run 2"
+            - name: check second flow  2
+              run: echo "check second flow run 2"            
 
     second-job:
         runs-on: ubuntu-latest
