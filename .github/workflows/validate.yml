@@ -1,5 +1,6 @@
 name: validate workflow 
 # on: push
+
 on: 
  workflow_run:
      workflows: [second wrokflow]
