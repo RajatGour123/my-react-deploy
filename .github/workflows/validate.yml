@@ -19,6 +19,8 @@ jobs:
               uses: actions/checkout@v4
 
             #   run: echo "check second flow run"
+            - name: check logs
+              run: echo "hey you look here"
 
             - name: validate js file
               run: test -f script.js
