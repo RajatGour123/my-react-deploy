@@ -1,5 +1,11 @@
 name: validate workflow 
-on: push
+# on: push
+on: 
+ workflow_run:
+     workflows: [second wrokflow]
+     types: 
+     - completed
+
 jobs:
     first-job-2:
         runs-on: ubuntu-latest
