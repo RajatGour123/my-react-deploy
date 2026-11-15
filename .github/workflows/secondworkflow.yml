@@ -18,6 +18,6 @@ jobs:
             - name: check second flow second-job
               run: echo "check second flow run second-job"
             - name: check second flow second-job 2
-              run: echo "check second flow run 2 second-job"
+              run: exit 1
 
 

@@ -9,6 +9,7 @@ on:
 
 jobs:
     first-job-2:
+        if: ${{github.event.workflow.conclusion == 'success'}}
         runs-on: ubuntu-latest
         steps:
             - name: get repo code
@@ -28,6 +29,8 @@ jobs:
               uses: actions/checkout@v4
 
             #   run: echo "check second flow run"
+            - name: check logs duplicatie
+              run: echo "hey you look here duplicatie"
             - name: validate html file
               run: test -f index.html
             - name: validate js file
